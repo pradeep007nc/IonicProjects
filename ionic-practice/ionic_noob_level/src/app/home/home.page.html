@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-card>
+    <ion-card-title>Photo Gallery</ion-card-title>
+  </ion-card>
+  <ion-toolbar>
+    <ion-searchbar color="light" animated="true" placeholder="Search Photos" [debounce]="1000" (ionInput)="onSearch($event)"
+    ></ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let item of results">
+        <ion-label>{{item}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-toolbar>
+
+    <a routerLink="tab_one">
+      <ion-card>
+        <ion-card-title>Tab One</ion-card-title>
+        <ion-card-content>demo</ion-card-content>
+      </ion-card>
+    </a>
+
+  <a routerLink="gallery">
+    <ion-card>
+      <ion-card-title>Gallery</ion-card-title>
+      <ion-card-content>demo</ion-card-content>
+    </ion-card>
+  </a>
+
+  <a routerLink="tab_three">
+    <ion-card>
+      <ion-card-title>Tab three</ion-card-title>
+      <ion-card-content>demo</ion-card-content>
+    </ion-card>
+  </a>
+
+</ion-header>

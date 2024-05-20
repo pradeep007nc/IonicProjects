@@ -1,0 +1,7 @@
+{
+  "name": "ionic_noob_level",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
